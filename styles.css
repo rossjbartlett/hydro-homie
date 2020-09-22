@@ -1,0 +1,296 @@
+:root {
+  --lightblue: #96CCFB;
+  --blue: #4BA8FA;
+  --darkblue: #3C86C7;
+  --greyblue: #25537A;
+  --grey: #49647A;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  letter-spacing: 0.05em;
+}
+
+@keyframes fade { 
+  0% {  opacity: 0; } 
+  100% {  opacity: 1; } 
+} 
+
+html, body {
+  height: 100%
+}
+
+body { 
+  display: flex;
+  flex-direction: column;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+}
+
+header {
+  width: 100%;
+  min-height: 14em;
+  background-color: var(--lightblue);
+  color: white;
+  background: var(--lightblue);
+  background: linear-gradient(90deg, var(--lightblue) 50%, var(--blue));
+}
+
+.social {
+  display: flex;
+  padding: 2em 5em 1em 5em;
+  justify-content: flex-end;
+}
+.social a {
+  text-decoration: none;
+}
+.social ul {
+  list-style-type: none;
+}
+.social li {
+  display: inline;
+  padding: 0 0.3em;
+}
+.social img {
+  width: 2em;
+  height: 2em;
+  border-radius: 5px
+}
+.social img:hover {
+  box-shadow: 0 0 1em var(--greyblue);
+}
+
+.headtext {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo {
+  line-height: 3em;
+  margin: 0 2em;
+}
+.logo h1 {
+  color: var(--greyblue);
+  font-weight: 500;
+  font-size: 2.5em;
+  animation: fade ease 5s;
+}
+.logo h2 {
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-size: 1.8em;
+  animation: fade ease 15s;
+}
+.logo:hover {
+  text-shadow: 0 0 1em white;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  padding: 0 4em;
+  letter-spacing: 0.2em;
+}
+nav li:hover {
+  color: var(--greyblue);
+  cursor: pointer;
+  text-shadow: 0 0 0.4em white;
+}
+nav li:nth-child(1) {
+  animation: fade ease 3s;
+}
+nav li:nth-child(2) {
+  animation: fade ease 5s;
+}
+nav li:nth-child(3) {
+  animation: fade ease 7s;
+}
+
+#pics { 
+  display: flex;
+}
+#pics img {
+  width: 33.333%;
+  height: auto;
+}
+#pics img:nth-child(1) {
+  animation: fade ease 5s;
+}
+#pics img:nth-child(2) {
+  animation: fade ease 8s;
+}
+#pics img:nth-child(3) {
+  animation: fade ease 10s;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+#containers {
+  flex: 1;
+  background-color: var(--greyblue);
+}
+.bottle {
+  padding: 2em;
+  background-color: var(--darkblue);
+  max-width: 70%;
+  margin: 1.5em auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  animation: fade ease 3s;
+  box-shadow: 0 0 0.5em;
+}
+.bottle:nth-child(even) {
+  flex-direction: row-reverse;
+  animation: fade ease 5s;
+}
+.bottle .info {
+  align-self: center;
+  background-color: var(--blue);
+  border-radius: 25px;
+  padding: 4em;
+  flex: 1;
+  margin: 1em;
+  box-shadow: 0 0 1em;
+}
+.bottle img {
+  background: white;
+  width: 30%;
+  max-width: 18em;
+  margin: 0 1em;
+  border-radius: 30px;
+  box-shadow: 0 0 1.5em;
+}
+
+#waters {
+  width: 80%;
+  margin: 0 auto;
+}
+#waters th {
+  background-color: var(--greyblue);
+  color: white;
+}
+#waters td:hover, #waters th:hover {
+  opacity: 0.5;
+}
+#waters td, #waters th {
+  border: 1px solid white;
+  padding: 1em;
+  letter-spacing: 0.1em;
+  border-radius: 1em;
+  text-align: center;
+}
+#waters tr:nth-child(3n+1){
+  background-color: var(--blue);
+  animation: fade ease 3s;
+}
+#waters tr:nth-child(3n+2){
+  background-color: var(--darkblue);
+  animation: fade ease 5s;
+}
+#waters tr:nth-child(3n+3){
+  background-color: var(--lightblue);
+  animation: fade ease 6s;
+}
+#waters img {
+  width: 100%;
+  box-shadow: 0 0 1em;
+}
+
+.bkg {
+  background-image: url("https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  animation: fade ease 1s;
+}
+
+#learnings {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+#learnings > div {
+  height: auto;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 25px;
+  box-shadow: 0 0 0.5em;
+}
+#learnings > div:nth-child(4n+1){
+  background: var(--blue);
+}
+#learnings > div:nth-child(4n+2){
+  background: var(--darkblue);
+  color: white;
+}
+#learnings > div:nth-child(4n+3){
+  background: var(--greyblue);
+  color: var(--lightblue);
+}
+#learnings > div:nth-child(4n+4){
+  background: var(--lightblue);
+  color: var(--greyblue);
+}
+
+.quote {
+  display: flex;
+}
+.quote p {
+  margin: auto;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  font-size: large;
+  animation: fade ease 5s;
+}
+.quote:nth-of-type(3n+1) {
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  min-height: 4em;
+  background-color: var(--lightblue);
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--blue);
+  background: linear-gradient(90deg, var(--blue), var(--lightblue));
+}
+footer p {
+  padding: 0 4em;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  font-weight: 100;
+  text-shadow: 0 0 1em white;
+}
+footer p:hover {
+  text-shadow: 0 0 2em white;
+}
+footer p:first-child {
+  animation: fade ease 10s;
+}
+footer p:last-child {
+  animation: fade ease 13s;
+}
+footer.fixed {
+  /* only used on index.html */
+  position: fixed;
+  bottom: 0; 
+}
