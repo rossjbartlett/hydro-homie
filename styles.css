@@ -213,6 +213,17 @@ nav li:nth-child(3) {
   width: 100%;
   box-shadow: 0 0 1em;
 }
+#waters td:first-child {
+  position: relative;
+  text-align: center;
+}
+#waters h3 {
+  position: absolute;
+  bottom: 11%;
+  left: 11%;
+  font-weight: 400;
+  letter-spacing: inherit;
+}
 
 .bkg {
   background-image: url("https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?ixlib=rb-1.2.1&w=1000&q=80");
