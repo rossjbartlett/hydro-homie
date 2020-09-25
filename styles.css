@@ -224,6 +224,9 @@ nav li:nth-child(3) {
   font-weight: 400;
   letter-spacing: inherit;
 }
+#waters ul {
+  list-style: none;
+}
 
 .bkg {
   background-image: url("https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?ixlib=rb-1.2.1&w=1000&q=80");
